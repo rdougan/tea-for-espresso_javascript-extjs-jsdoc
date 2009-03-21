@@ -1,0 +1,15 @@
+h1. TEA for Espresso
+h2. JavaScript, JSDoc and ExtJS snippets
+
+h3. Install
+After you clone, move the folder to ~/Library/Application\ Support/Espresso/TEA/
+
+The result should be similar to this:
+<pre><code>
+~/Library/Application\ Support/Espresso/TEA/UserActions.xml
+~/Library/Application\ Support/Espresso/TEA/UserCategories.xml
+</code></pre>
+
+h3. About
+ExtJS and JSDoc snippets taken from the ExtJS.tmbundle by edspencer and rdougan.
+JavaScript snippets based off the default TextMate snippets by MacroMates.
