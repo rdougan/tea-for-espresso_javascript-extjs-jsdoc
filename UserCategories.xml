@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<action-categories>
+  <!-- JavaScript -->
+  <category id="actions.text.JavaScript" show="sub">
+    <title>JavaScript</title>
+  </category>
+  
+  <!-- JSDoc -->
+  <category id="actions.text.JSDoc" show="sub separated">
+    <title>JSDoc</title>
+  </category>
+  
+  <!-- ExtJS -->
+  <category id="actions.text.ExtJS" show="sub separated">
+    <title>ExtJS</title>
+  </category>
+    <category id="actions.text.ExtJS.Extending" show="sub">
+      <title>Extending</title>
+    </category>
+    <category id="actions.text.ExtJS.Events" show="sub">
+      <title>Events</title>
+    </category>
+  
+  <!-- Misc for sorting -->
+  <category id="actions.text.Misc0" show="inline separated"></category>
+  <category id="actions.text.Misc1" show="inline separated"></category>
+  <category id="actions.text.Misc2" show="inline separated"></category>
+  <category id="actions.text.Misc3" show="inline separated"></category>
+  <category id="actions.text.Misc4" show="inline separated"></category>
+  <category id="actions.text.Misc5" show="inline separated"></category>
+</action-categories>

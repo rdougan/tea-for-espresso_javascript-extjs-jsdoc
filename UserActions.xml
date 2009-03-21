@@ -1,0 +1,1025 @@
+<?xml version="1.0"?>
+<action-recipes>
+  
+  <!-- ################################## -->
+  <!-- JavaScript -->
+  <!-- ################################## -->
+  
+  <!-- console.log('test') -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.c" category="actions.text.JavaScript/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>console.log - String</title>
+    <text-trigger>c</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[console.log('${1:test}');${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- console.log() -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.co" category="actions.text.JavaScript/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>console.log - Object</title>
+    <text-trigger>co</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[console.log(${1});${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- alert() -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.alert" category="actions.text.JavaScript/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>alert</title>
+    <text-trigger>a</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[alert('${1:test}');${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- return; -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.return" category="actions.text.JavaScript/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>return</title>
+    <text-trigger>r</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[return;${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- if () { } -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.if" category="actions.text.JavaScript/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>if</title>
+    <text-trigger>if</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[if (${1:true}) { ${0} };]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- if() { } else { } -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.ifelse" category="actions.text.JavaScript/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>if ... else</title>
+    <text-trigger>ife</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[if (${1:true}) { ${2} } else { ${3} };]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- for (...) {...} -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.for" category="actions.text.JavaScript/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>for</title>
+    <text-trigger>for</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[for (var ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {
+	${3:${1:array}[${2:i}];}$0
+};]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- prototype -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.prototype" category="actions.text.JavaScript/actions.text.Misc3">
+    <class>TEAforEspresso</class>
+    <title>Prototype</title>
+    <text-trigger>proto</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
+	${0:// body...}
+};]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- function -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.function" category="actions.text.JavaScript/actions.text.Misc4">
+    <class>TEAforEspresso</class>
+    <title>Function</title>
+    <text-trigger>fun</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[function ${1:function_name} (${2:argument}) {
+	${0:// body...}
+};]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- anonymous function -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.anonymousFunction" category="actions.text.JavaScript/actions.text.Misc4">
+    <class>TEAforEspresso</class>
+    <title>Anonymous Function</title>
+    <text-trigger>f</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[function($1) { ${0} };]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- object method -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.objectMethod" category="actions.text.JavaScript/actions.text.Misc5">
+    <class>TEAforEspresso</class>
+    <title>Object Method</title>
+    <text-trigger>:f</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:method_name}: function(${2:attribute}){
+	$0
+}${3:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- object method string -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.objectMethodString" category="actions.text.JavaScript/actions.text.Misc5">
+    <class>TEAforEspresso</class>
+    <title>Object Method String</title>
+    <text-trigger>":f</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA["${1:method_name}": function(${2:attribute}){
+	$0
+}${3:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- object property -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JavaScript.objectProperty" category="actions.text.JavaScript/actions.text.Misc5">
+    <class>TEAforEspresso</class>
+    <title>Object Property</title>
+    <text-trigger>:,</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:property}: ${0:value}${2:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ################################## -->
+  <!-- JSDoc -->
+  <!-- ################################## -->
+  
+  <!-- comment -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.comment" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Comment</title>
+    <text-trigger>/**</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * ${1}
+ */
+${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- param -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.param" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>@param</title>
+    <text-trigger>* p</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[* @param {${1:String}} ${2:name} ${3:Parameter description}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- type -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.type" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>@type</title>
+    <text-trigger>* t</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[* @type ${1:Boolean}${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- property -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.type" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>@property</title>
+    <text-trigger>* pr</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[* @property ${1:name}${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- class -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.class" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>@class</title>
+    <text-trigger>* cl</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[* @class ${1:ClassName}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- return -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.JSDoc.return" category="actions.text.JavaScript/actions.text.JSDoc/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>@return</title>
+    <text-trigger>* r</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[* @return {${1:String}} ${2:Returned parameter description}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ################################## -->
+  <!-- ExtJS -->
+  <!-- ################################## -->
+  
+  <!-- onReady -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.onReady" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Ext.onReady</title>
+    <text-trigger>ready</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.onReady(function() {
+  $0
+});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- s.gif -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.sgif" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>s.gif</title>
+    <text-trigger>s.gif</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.BLANK_IMAGE_URL = '${1:http://extjs.cachefly.net/ext-2.2/resources/images/default/}s.gif';$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- function in extend block -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.functionInExtendBlock" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>Function in extend block</title>
+    <text-trigger>ef</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * ${10:Function description}${2:
+ * @param {${3:String}\} ${4:paramName} ${5:parameter description}}${7:
+ * @return {${8:String}\} ${9:Return value description}}
+ */
+${1:functionName}: function($4$6) {
+  $0
+}${11:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- property in extend block -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.propertyInExtendBlock" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>Property in extend block</title>
+    <text-trigger>ep</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @property ${1:propertyName}
+ * @type ${2:Boolean}
+ * ${3:Property description}
+ */
+${1:propertyName}: ${0}${4:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ################################## -->
+  <!-- EVENTS -->
+  <!-- ################################## -->
+  
+  <!-- add events -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.addEvents" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Add Events</title>
+    <text-trigger>ae</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:this}.addEvents(
+  /**
+   * @event ${2:eventName}
+   * ${3:Event description}${4:
+   * @param {${5:paramType}\} ${6:paramName} ${7:parameter description}}
+   */
+  '${2:eventName}'$0
+);]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- event definition -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.eventDefinition" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Event definition</title>
+    <text-trigger>e</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @event ${1:eventName}
+ * ${2:Event description}${3:
+ * @param {${4:paramType}\} ${5:paramName} ${6:parameter description}}
+ */
+'${1:eventName}'${7:,}$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- on -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.on" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>on</title>
+    <text-trigger>on</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:this}.on('${2:click}', ${4:function($5) {$0\}}, ${3:this});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- un -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.un" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>un</title>
+    <text-trigger>un</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:this}.un('${2:click}', ${4:function($5) {$0\}}, ${3:this});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- fireEvent -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.fireEvent" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>fireEvent</title>
+    <text-trigger>fe</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:this}.fireEvent('${2:eventName}'${3:, ${4:params}});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- getTarget -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.getTarget" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Events/actions.text.Misc4">
+    <class>TEAforEspresso</class>
+    <title>e.getTarget</title>
+    <text-trigger>gt</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:e}.getTarget($0)]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ################################## -->
+  <!-- EXTENDING -->
+  <!-- ################################## -->
+  
+  <!-- extend -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.extend" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Ext.extend</title>
+    <text-trigger>extend</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @class ${1:MyNamespace.}${2:ClassName}
+ * @extends ${3:extendsClass}
+ * ${6:Description}
+ */
+${1:MyNamespace.}${2:ClassName} = Ext.extend(${3:extendsClass}, {
+  
+  initComponent: function() {
+    Ext.applyIf(this, {
+      $0
+    });
+    
+    ${1:MyNamespace.}${2:ClassName}.superclass.initComponent.apply(this, arguments);
+  }
+});${4:
+
+Ext.reg('${5:xtype}', ${1:MyNamespace.}${2:ClassName});}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- reg -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.reg" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Ext.reg</title>
+    <text-trigger>reg</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.reg('${1:xtype}', ${2:ClassName});$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- super -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.super" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>superclass</title>
+    <text-trigger>super</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:MyClassName}.superclass.${2:constructor}.${3:apply}(${4:this, arguments});$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ns -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.ns" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc0">
+    <class>TEAforEspresso</class>
+    <title>Ext.ns</title>
+    <text-trigger>ns</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.ns('$1');$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- initComponent -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.initComponent" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>initComponent</title>
+    <text-trigger>initc</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[initComponent: function() {
+  $0
+
+  ${1:${TM_FILENAME/(.+)\.js$/$1/}}.superclass.initComponent.apply(this, arguments);
+}${2:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- onRender -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.onRender" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>onRender</title>
+    <text-trigger>onRender</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * ${2:Renders the HTML for this component}
+ * @param {Ext.Container} ct The container to render this component to
+ * @param {Number} position The position within the parent container to render this component to
+ */
+onRender: function(ct, position) {
+  this.el = ct.createChild({
+    $0
+  });
+
+  ${1:MyClassName}.superclass.onRender.apply(this, arguments);
+}${3:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- getLayoutTarget -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.getLayoutTarget" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending/actions.text.Misc2">
+    <class>TEAforEspresso</class>
+    <title>getLayoutTarget</title>
+    <text-trigger>glt</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * Returns the HTML element to render child components to
+ * @return {Ext.Element} The element child components will be rendered to
+ */
+getLayoutTarget: function() {
+  return ${1:this.layoutTarget};
+}${2:,}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- component sub-class -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.componentSubClass" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+    <class>TEAforEspresso</class>
+    <title>Component sub-class</title>
+    <text-trigger>component</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @class ${1:ClassName}
+ * @extends ${2:Ext.Component}
+ * ${5:Description}
+ */
+${1:ClassName} = function(config) {
+  var config = config || {};
+
+  Ext.applyIf(config, {
+    $0
+  });
+
+  ${1:ClassName}.superclass.constructor.call(this, config);
+};
+Ext.extend(${1:ClassName}, ${2:Ext.Component}, {
+  /**
+   * ${6:Renders the HTML for this component}
+   * @param {Ext.Container} ct The container to render this component to
+   * @param {Number} position The position within the parent container to render this component to
+   */
+  onRender: function(ct, position) {
+    this.el = ct.createChild({
+      $7
+    });
+
+    ${1:ClassName}.superclass.onRender.apply(this, arguments);
+  }
+});
+
+${3:Ext.reg('${4:xtype}', ${1:ClassName});}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- container sub-class -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.containerSubClass" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+    <class>TEAforEspresso</class>
+    <title>Container sub-class</title>
+    <text-trigger>container</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @class ${1:ClassName}
+ * @extends ${2:Ext.Container}
+ * ${5:Description}
+ */
+${1:ClassName} = function(config) {
+  var config = config || {};
+
+  Ext.applyIf(config, {
+    $0
+  });
+
+  ${1:ClassName}.superclass.constructor.call(this, config);
+};
+Ext.extend(${1:ClassName}, ${2:Ext.Container}, {
+  /**
+   * ${6:Renders the HTML for this container}
+   * @param {Ext.Container} ct The container to render this component to
+   * @param {Number} position The position within the parent container to render this component to
+   */
+  onRender: function(ct, position) {
+    this.el = ct.createChild({
+      $7
+    });
+${8:
+    this.layoutTarget = this.el.child('${9:childSelector}');
+}  
+    ${1:ClassName}.superclass.onRender.apply(this, arguments);
+  },${10:
+
+  /**
+   * Returns the element to add child components to
+   * @return {Ext.Element\} The HTML element child components will be rendered to
+   */
+  getLayoutTarget: function() {
+    return this.layoutTarget;
+  \}
+}
+});
+
+${3:Ext.reg('${4:xtype}', ${1:ClassName});}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- extended panel -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.extendedPanel" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.ExtJS.Extending">
+    <class>TEAforEspresso</class>
+    <title>Extend Panel</title>
+    <text-trigger>epanel</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[/**
+ * @class ${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}}
+ * @extends Ext.Panel
+ */
+${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}} = Ext.extend(Ext.Panel, {
+
+  initComponent: function() {
+    Ext.applyIf(this, {
+      $0
+    });
+
+    ${1:MyNamespace.}${2:${TM_FILENAME/(.+)\.js$/$1/}}.superclass.initComponent.apply(this, arguments);
+  }
+});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- new dataview -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.newDataview" category="actions.text.JavaScript/actions.text.ExtJS">
+    <class>TEAforEspresso</class>
+    <title>new Ext.DataView</title>
+    <text-trigger>ndataview</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[${1:name} = new Ext.DataView({
+  xtype:        'dataview',
+  emptyText:    '${2:No items to display}',${3:
+  singleSelect: ${4:true},}${5:
+  autoHeight:   true,}${6:
+  autoScroll:   true,
+  overClass:    '${7:x-view-over}',}${8:
+  itemSelector: '${9:div.thumb-wrap}',}
+  store:        ${10:store}${11:,
+  tpl:          ${12:new ${13:Ext.XTemplate}(
+    '<tpl for=".">',
+      $0
+    '</tpl>'
+  )}}
+});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- xtype dataview -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.xtypeDataview" category="actions.text.JavaScript/actions.text.ExtJS">
+    <class>TEAforEspresso</class>
+    <title>DataView (xtype)</title>
+    <text-trigger>dataview</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[{
+  xtype:        'dataview',
+  emptyText:    '${1:No items to display}',${2:
+  singleSelect: ${3:true},}${4:
+  autoHeight:   true,}${5:
+  autoScroll:   true,
+  overClass:    '${6:x-view-over}',}${7:
+  itemSelector: '${8:div.thumb-wrap}',}
+  store:        ${9:store}${10:,
+  tpl:          ${11:new ${12:Ext.XTemplate}(
+    '<tpl for=".">',
+      $0
+    '</tpl>'
+  )}}
+}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- ################################## -->
+  <!-- MISC -->
+  <!-- ################################## -->
+  
+  <!-- conditional assignment -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.conditionalAssignment" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>Conditional Assignment</title>
+    <text-trigger>||=</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[var ${1:config} = ${1:config} || {$2};$0]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- applyIf -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.applyIf" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>Ext.applyIf</title>
+    <text-trigger>aif</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.applyIf(${1:config}, {
+  $0
+});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- apply -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.apply" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>Ext.apply</title>
+    <text-trigger>apply</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.apply(${1:config}, {
+  $0
+});]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- handler anonymous function -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.handlerAnonymousFunction" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc1">
+    <class>TEAforEspresso</class>
+    <title>Handler anonymous function</title>
+    <text-trigger>han</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[handler: function($1) {
+  $0
+}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- each -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.each" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc3">
+    <class>TEAforEspresso</class>
+    <title>Ext.each</title>
+    <text-trigger>each</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.each(${1:Array}, ${2:function(${4}) {
+  ${5}
+\}}${3:, this});${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- temptask -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.temptask" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc3">
+    <class>TEAforEspresso</class>
+    <title>Ext.util.DelayedTask</title>
+    <text-trigger>temptask</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[var ${1:tempTask} = new Ext.util.DelayedTask(${2:function() {
+  ${5}
+\}}, ${3:this});
+${1}.delay(${4:1000});${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- template -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.template" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc4">
+    <class>TEAforEspresso</class>
+    <title>Ext.Template</title>
+    <text-trigger>temp</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[new Ext.Template('${1}')${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- xtemplate -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.xtemplate" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc4">
+    <class>TEAforEspresso</class>
+    <title>Ext.XTemplate</title>
+    <text-trigger>xtemp</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[new Ext.XTemplate('${1}')${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+  <!-- msg -->
+  <action id="com.robertdougan.TextActions.InsertSnippet.ExtJS.msg" category="actions.text.JavaScript/actions.text.ExtJS/actions.text.Misc5">
+    <class>TEAforEspresso</class>
+    <title>Ext.Msg.alert</title>
+    <text-trigger>msg</text-trigger>
+    <setup>
+      <target_action>insert_snippet</target_action>
+      <arguments>
+        <dict>
+          <key>default</key>
+          <string><![CDATA[Ext.Msg.alert('${1:Error}', '${2:Sorry, Something went wrong. Please try again}');${0}]]></string>
+        </dict>
+      </arguments>
+    </setup>
+  </action>
+  
+</action-recipes>
