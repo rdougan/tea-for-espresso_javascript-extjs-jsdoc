@@ -11,6 +11,11 @@ The result should be similar to this:
 ~/Library/Application\ Support/Espresso/TEA/UserCategories.xml
 </code></pre>
 
+Alternatively you can run these commands:
+<pre><code>cd ~/Library/Application\ Support/Espresso
+git clone git://github.com/rdougan/tea-for-espresso_javascript-extjs-jsdoc.git "TEA"
+</code></pre>
+
 h3. About
 
 * ExtJS and JSDoc snippets taken from the ExtJS.tmbundle by edspencer and rdougan.
